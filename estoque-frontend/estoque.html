@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Gestão de Estoque</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="navbar">
+    <button onclick="window.location.href='home.html'">Voltar</button>
+</div>
+
+<div class="container">
+    <h2>Movimentação de Estoque</h2>
+
+    <select id="produtoSelect"></select>
+
+    <select id="tipo">
+        <option value="entrada">Entrada</option>
+        <option value="saida">Saída</option>
+    </select>
+
+    <input type="number" id="quantidade" placeholder="Quantidade">
+    <input type="date" id="data">
+
+    <button onclick="movimentarEstoque()">Confirmar</button>
+
+    <p id="alerta"></p>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
